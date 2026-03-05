@@ -52,7 +52,7 @@ pipeline {
                     ansiblePlaybook(
                         playbook: 'deploy.yml',
                         inventory: 'inventory.ini',
-                        extras: '-K'
+                        // extras: '-K'
                     )
                 }
             }
