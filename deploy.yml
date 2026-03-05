@@ -28,4 +28,4 @@
         restart_policy: always
         interactive: true
         tty: true
-        # stdin_open: true
+        stdin_open: true
