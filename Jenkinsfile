@@ -4,7 +4,7 @@ pipeline {
         DOCKER_IMAGE_NAME = 'scientific-calculator'
         GITHUB_REPO_URL = 'https://github.com/Preet018/SPE_Calculator.git'
         DOCKER_REGISTRY = 'docker.io'
-        DOCKER_USERNAME = 'preet018'
+        DOCKER_USERNAME = 'preet1018'
         IMAGE_TAG = '0.0.1'
     }
     stages {
