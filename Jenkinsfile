@@ -61,6 +61,11 @@ pipeline {
     post {
         success {
             echo 'Pipeline successfully completed!'
+            emailext(
+                to: 'chandrakarpreet.1100@gmail.com',
+                subject: 'Build Success: Scientific Calculator',
+                body: 'The Jenkins pipeline for the Scientific Calculator project has completed successfully.'
+            )
         }
         failure {
             echo 'Pipeline failed!'
