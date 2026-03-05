@@ -25,5 +25,7 @@
         name: calculator
         image: preet1018/scientific-calculator:0.0.1
         state: started
+        restart_policy: always
         interactive: true
         tty: true
+        # stdin_open: true
