@@ -17,13 +17,13 @@
 
     - name: Pull Docker image
       docker_image:
-        name: docker.io/preet1018/scientific-calculator
+        name: docker.io/preet1018/scientific-calculator.0.0.1
         source: pull
 
     - name: Run container
       docker_container:
         name: calculator
-        image: docker.io/preet1018/scientific-calculator
+        image: docker.io/preet1018/scientific-calculator.0.0.1
         state: started
         ports:
           - "8081:8080"
