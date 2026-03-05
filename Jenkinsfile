@@ -15,9 +15,16 @@ pipeline {
                 }
             }
         }
+        // stage('Build and Test') {
+        //     steps {
+        //         script {
+        //             sh 'mvn clean install'
+        //         }
+        //     }
+        // }
         stage('Build and Test') {
             steps {
-                script {
+                withMaven(maven: 'Maven') {
                     sh 'mvn clean install'
                 }
             }
