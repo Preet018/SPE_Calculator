@@ -69,7 +69,11 @@ pipeline {
         }
         failure {
             echo 'Pipeline failed!'
-            // Add failure notifications here (e.g., Slack, email)
+            emailext(
+                to: 'chandrakarpreet.1100@gmail.com',
+                subject: 'Build Failure: Scientific Calculator',
+                body: 'The Jenkins pipeline for the Scientific Calculator project has failed.'
+            )
         }
     }
 }
