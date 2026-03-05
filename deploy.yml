@@ -27,5 +27,7 @@
         state: started
         # restart_policy: always
         interactive: true
+        tty: true
+        stdin_open: true
         # ports:
         #   - "8081:8080"
