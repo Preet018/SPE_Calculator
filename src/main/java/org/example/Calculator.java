@@ -63,7 +63,7 @@ public class Calculator {
             } catch (Exception e) {
                 System.out.println("Invalid input. Please enter a number corresponding to the options.");
                 // Clear the invalid input
-                sc.next();
+                sc.nextLine();
                 continue;
             }
 
