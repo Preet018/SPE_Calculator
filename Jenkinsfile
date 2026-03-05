@@ -34,7 +34,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 script {
-                    docker.withRegistry('', 'DockerHubCredentials') {
+                    docker.withRegistry('', 'DockerHubCred') {
                         // Tag the image with the appropriate version and latest
                         sh "docker tag ${DOCKER_IMAGE_NAME}:${IMAGE_TAG} ${DOCKER_REGISTRY}/${DOCKER_USERNAME}/scientific-calculator:${IMAGE_TAG}"
                         sh "docker tag ${DOCKER_IMAGE_NAME}:${IMAGE_TAG} ${DOCKER_REGISTRY}/${DOCKER_USERNAME}/scientific-calculator:latest"
