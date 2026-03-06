@@ -101,7 +101,7 @@ Follow the steps below to build and run the Scientific Calculator application.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/scientific-calculator.git
+git clone https://github.com/Preet018/SPE_Calculator.git
 cd scientific-calculator
 ```
 
