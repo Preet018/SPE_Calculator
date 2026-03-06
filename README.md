@@ -143,13 +143,6 @@ Run the Ansible playbook to deploy and start the container.
 ansible-playbook -i inventory.ini deploy.yml
 ```
 
-````
-Just **replace this line** with your actual repo link:
-
-```text
-https://github.com/your-username/scientific-calculator.git
-````
-
 ---
 
 # Scientific Calculator Features
