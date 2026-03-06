@@ -103,7 +103,7 @@ Follow the steps below to build and run the Scientific Calculator application.
 ```bash
 git clone https://github.com/your-username/scientific-calculator.git
 cd scientific-calculator
-````
+```
 
 ### 2. Build the Application
 
