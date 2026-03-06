@@ -49,6 +49,7 @@ The source code is stored and version controlled using **Git** and **GitHub**.
 
 # Project Architecture
 
+```
 Developer
     │
     │ Push Code
@@ -70,6 +71,7 @@ Ansible Deployment
     │
     ▼
 Docker Container Running Calculator
+```
 
 ---
 
