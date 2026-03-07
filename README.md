@@ -149,11 +149,11 @@ ansible-playbook -i inventory.ini deploy.yml
 
 The command-line calculator supports the following operations:
 
-* Square Root (√x)
-* Factorial (x!)
-* Natural Logarithm (ln(x))
-* Power Function (x^b)
-* Exit
+- Square Root (√x)
+- Factorial (x!)
+- Natural Logarithm (ln(x))
+- Power Function (x^b)
+- Exit
 
 ---
 
