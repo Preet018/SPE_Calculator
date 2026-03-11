@@ -86,12 +86,14 @@ public class Calculator {
 
             switch (option) {
                 case 1:
-                    System.out.println("Enter a number to find its square root: ");
-
                     try {
+                        System.out.println("Enter a number to find its square root: ");
                         x = sc.nextDouble();
                     } catch (Exception e) {
+                        System.out.println();
                         System.out.println("Invalid input. Please enter a non-negative number for square root.");
+                        System.out.println();
+
                         // Clear the invalid input
                         sc.nextLine();
                         continue;
@@ -110,17 +112,19 @@ public class Calculator {
                     break;
 
                 case 2:
-                    System.out.println("Enter a number to find its factorial: ");
                     int x1;
                     try {
+                        System.out.println("Enter a number to find its factorial: ");
                         x1 = sc.nextInt();
                     } catch (Exception e) {
+                        System.out.println();
                         System.out.println("Invalid input. Please enter a non-negative integer for factorial.");
+                        System.out.println();
+
                         // Clear the invalid input
                         sc.nextLine();
                         continue;
                     }
-                    x1 = sc.nextInt();
 
                     try {
                         System.out.println();
@@ -135,11 +139,15 @@ public class Calculator {
                     break;
 
                 case 3:
-                    System.out.println("Enter a number to find its natural logarithm: ");
                     try {
+                        System.out.println("Enter a number to find its natural logarithm: ");
                         x = sc.nextDouble();
                     } catch (Exception e) {
+                        System.out.println();
                         System.out.println("Invalid input. Please enter a positive number for natural logarithm.");
+                        System.out.println();
+
+                        // Clear the invalid input
                         sc.nextLine();
                         continue;
                     }
@@ -163,7 +171,11 @@ public class Calculator {
                         System.out.println("Enter exponent (b): ");
                         b = sc.nextDouble();
                     } catch (Exception e) {
+                        System.out.println();
                         System.out.println("Invalid input. Please enter valid numbers for base and exponent.");
+                        System.out.println();
+
+                        // Clear the invalid input
                         sc.nextLine();
                         continue;
                     }
