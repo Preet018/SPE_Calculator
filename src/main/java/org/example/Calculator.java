@@ -87,7 +87,15 @@ public class Calculator {
             switch (option) {
                 case 1:
                     System.out.println("Enter a number to find its square root: ");
-                    x = sc.nextDouble();
+
+                    try {
+                        x = sc.nextDouble();
+                    } catch (Exception e) {
+                        System.out.println("Invalid input. Please enter a non-negative number for square root.");
+                        // Clear the invalid input
+                        sc.nextLine();
+                        continue;
+                    }
 
                     try {
                         System.out.println();
@@ -103,7 +111,16 @@ public class Calculator {
 
                 case 2:
                     System.out.println("Enter a number to find its factorial: ");
-                    int x1 = sc.nextInt();
+                    int x1;
+                    try {
+                        x1 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("Invalid input. Please enter a non-negative integer for factorial.");
+                        // Clear the invalid input
+                        sc.nextLine();
+                        continue;
+                    }
+                    x1 = sc.nextInt();
 
                     try {
                         System.out.println();
@@ -119,7 +136,13 @@ public class Calculator {
 
                 case 3:
                     System.out.println("Enter a number to find its natural logarithm: ");
-                    x = sc.nextDouble();
+                    try {
+                        x = sc.nextDouble();
+                    } catch (Exception e) {
+                        System.out.println("Invalid input. Please enter a positive number for natural logarithm.");
+                        sc.nextLine();
+                        continue;
+                    }
 
                     try {
                         System.out.println();
@@ -134,11 +157,16 @@ public class Calculator {
                     break;
 
                 case 4:
-                    System.out.println("Enter base (x): ");
-                    x = sc.nextDouble();
-                    System.out.println("Enter exponent (b): ");
-                    b = sc.nextDouble();
-
+                    try {
+                        System.out.println("Enter base (x): ");
+                        x = sc.nextDouble();
+                        System.out.println("Enter exponent (b): ");
+                        b = sc.nextDouble();
+                    } catch (Exception e) {
+                        System.out.println("Invalid input. Please enter valid numbers for base and exponent.");
+                        sc.nextLine();
+                        continue;
+                    }
                     try {
                         System.out.println();
                         System.out.println("Result: " + power(x, b));
